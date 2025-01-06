@@ -24,4 +24,4 @@ git clone https://github.com/dr-bcyadav/Python-Deep-Dive.git
 ```
 
 ## Credit where its due 
-Several codes or tutorials are inspired from [](https://www.geeksforgeeks.org)
+Several codes or tutorials are inspired from [geeksforgeeks.org](https://www.geeksforgeeks.org).
