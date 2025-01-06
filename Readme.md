@@ -8,6 +8,7 @@ Welcome to the **Python Deep Dive** repository! This repository is dedicated to 
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
   - [Getting Started](#getting-started)
+  - [Credit where its due](#credit-where-its-due)
 
 ## Introduction
 
@@ -21,3 +22,6 @@ To get started with the tutorials in this repository, clone the repository to yo
 bash
 git clone https://github.com/dr-bcyadav/Python-Deep-Dive.git
 ```
+
+## Credit where its due 
+Several codes or tutorials are inspired from [](https://www.geeksforgeeks.org)
