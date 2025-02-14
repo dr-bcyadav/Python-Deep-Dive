@@ -3,17 +3,9 @@
 # ======================================================================== #
 # --------------------- Compiled by: (Dr.) B.C. Yadav -------------------- #
 # ------------------------ On: 2025/01/06 19:48:02 ----------------------- #
-# --------------------- Updated: 2025/01/06 19:48:02 --------------------- #
+# --------------------- Updated: 2025/02/14 14:11:43 --------------------- #
 # ======================================================================== #
-# This code cover the essential concepts of Python to achieve a good efficiency in coding operations.
-
-# TOC:
-    # Libraries
-    # Comments
-    # Multiple assignment of variables
-    # Local and global variables 
-    # Object reference in python
-    # Keywords in python
+# This code covers part of the Python concepts needed to code efficiently, focussing on python naming convention, multiple assignment of variables, etc.
 
 
 
@@ -26,10 +18,14 @@ import keyword
 
 
 # %% ===================================================================== #
-#                                 COMMENTS                                 #
+#                      COMMENTS AND NAMING CONVENTION                      #
 # ======================================================================== #
-# Note: Python ignores the string literals that are not assigned to a variable. 
+# Python ignores the string literals left unassigned to any variable, which can then be used as comments as follows: 
 """So, we can use these string literals as comments, or the usual hash preceded statements."""
+
+# Variables and functions in python are named in the convention of snake case while classes are named in Pascal case respectively.
+# snake case refers to all lowercase words separated by underscore
+# Pascal case refers to all words starting with a capital letter.
 
 
 
@@ -73,7 +69,7 @@ print(b)
 
 
 # %% ===================================================================== #
-#                        OBJECT REFERENCE IN PYTHON                        #
+#                       OBJECT REFERENCING IN PYTHON                       #
 # ======================================================================== #
 # Let us assign a variable x to a value 5
 x = 5
@@ -141,100 +137,5 @@ del x
 
 
 # %% ===================================================================== #
-#                            KEYWORDS IN PYTHON                            #
+#                                    END                                   #
 # ======================================================================== #
-# Printing all keywords at once using "kwlist()"
-for word in keyword.kwlist:
-    print(word)
-
-# - Most of the IDEs color the keywords distinctly. Above keywords can be categorized as follows: 
-
-# |---------------------  |-----------------------------------------------|
-# |Category               |Keywords                                       |
-# |---------------------  |-----------------------------------------------|
-# |Value Keywords         |True, False, None, del                         |
-# |Operator Keywords      |and, or, not, in, is                           |
-# |Control Flow Keywords  |if, else, elif, for, while, break, continue, pass, try, except, finally, raise, assert                                 |
-# |Function and Class     |def, return, lambda, yield, class              |
-# |Context Management     |with, as                                       |
-# |Import and Module      |import, from, as                               |
-# |Scope and Namespace    |global, nonlocal                               |
-# |Async Programming      |async, await                                   |
-
-
-
-# %% ========================= Value Keywords ============================ #
-# True, False represent boolean values while Null is a special constant used to denote a null value or void.
-print(False == 0)
-print(True == 1)
-
-print(True + True + True + True)
-print(False + False + False + False)
-
-# Null does not equate to zero or any empty data structure
-print(None==0)
-print(None==[])
-
-
-
-# %% ======================== Operator Keywords ========================== #
-# and, or and not 
-a, b = True, False
-print(a and b)  # True when both true 
-print(a or b)  # True when one of them is true 
-print(not a)  # prints the negation of a
-
-# in keyword (membership operator): checks a value in a sequence (list, tuple, string, etc.)
-print('s' in 'this code repository')
-
-# is keyword: checks whether two variables point to the same object in memory 
-# Example 1: 
-print('2' is '2')
-
-# Example 2:
-a = [1, 2, 3]
-b = a
-c = [1, 2, 3]
-
-print(a is b)  # both point to same object
-print(a is c)  # different objects (with same values)
-
-
-
-# %% ====================== Control Flow Keywords ======================== #
-# if elif else: An expression when true passes the control to `if` block, otherwise to the `elif` or `else` block.
-if 4 > 5:
-    print("This way")
-elif 4 < 3:
-    print("That way")
-else:
-    print("No way!")
-    
-# for and while are used to create loops
-for i in range(2):
-    print('consistency')
-
-i=0
-while (i<2):
-    print('consistency is the word')
-    i+=1
-    
-# break keyword is used to break out of the flow of a loop and pass the control to the next statement following immediately after the loop (e.g., an outer loop)
-i=0
-while i<4:
-    i+=1
-    if i==3:
-        break
-    print(i)
-
-# continue keyword skips the current iteration of a loop and goes to its next iteration, and does not end the loop. 
-i=0
-while i<4:
-    i+=1
-    if i==3:
-        continue
-    print(i)
-
-# pass keyword: pass is the null statement in python.
-
-
