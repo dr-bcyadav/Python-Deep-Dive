@@ -7,6 +7,18 @@
 # ======================================================================== #
 # This code covers part of the Python concepts needed to code efficiently, focussing on keywords.
 
+
+
+# %% ===================================================================== #
+#                                 LIBRARIES                                #
+# ======================================================================== #
+import pandas as pd 
+import keyword
+
+
+# ======================================================================== #
+#                                BACKGROUND                                #
+# ======================================================================== #
 # Printing all keywords at once using "kwlist()"
 for word in keyword.kwlist:
     print(word)
@@ -24,14 +36,6 @@ for word in keyword.kwlist:
 # |Import and Module      |import, from, as                               |
 # |Scope and Namespace    |global, nonlocal                               |
 # |Async Programming      |async, await                                   |
-
-
-
-# %% ===================================================================== #
-#                                 LIBRARIES                                #
-# ======================================================================== #
-import pandas as pd 
-import keyword
 
 
 
