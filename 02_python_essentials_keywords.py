@@ -3,7 +3,7 @@
 # ======================================================================== #
 # --------------------- Compiled by: (Dr.) B.C. Yadav -------------------- #
 # ------------------------ On: 2025/01/06 19:48:02 ----------------------- #
-# --------------------- Updated: 2025/02/14 14:11:43 --------------------- #
+# --------------------- Updated: 2025/02/18 08:38:23 --------------------- #
 # ======================================================================== #
 # This code covers part of the Python concepts needed to code efficiently, focussing on keywords.
 
@@ -33,7 +33,7 @@ for word in keyword.kwlist:
 # |Control Flow Keywords  |if, else, elif, for, while, break, continue, pass, try, except, finally, raise, assert                                 |
 # |Structure              |def, return, lambda, yield, class              |
 # |Context Management     |with, as                                       |
-# |Import and Module      |import, from, as                               |
+# |Import and Module      |import, from                                   |
 # |Scope and Namespace    |global, nonlocal                               |
 # |Async Programming      |async, await                                   |
 
@@ -208,4 +208,53 @@ for value in function_with_yield():
     
 
 
-# ================================ Lambda ================================ #
+# %% ============================= Lambda ================================ #
+# Lambda function is an anonymous throwaway functions defined using `lambda` keyword, capable of taking multiple arguments but evaluating them over a single expression.
+numbers = [1,2,3,4]
+squares = list(map(lambda x: x**2, numbers))
+print(squares)
+
+
+
+# %% ===================================================================== #
+#                             CONTEXT KEYWORDS                             #
+# ======================================================================== #
+# ================================= With ================================= #
+# `with` keyword is used to wrap the execution of a block of code within methods defined by a context manager. It ensures that resources are properly managed such as opening and closing of files.
+with open('./temp.txt', 'r') as file:
+    content = file.read()
+    file.close()
+    
+    
+# ================================== As ================================== #
+# `as` is used to create an alias 
+import numpy as my_numpy
+
+
+
+# %% ===================================================================== #
+#                              IMPORT AND FROM                             #
+# ======================================================================== #
+# `import` keywords is used to load libraries into the code. `from` is used to specify the specific functions or classes we wish to import from a module
+import numpy as np 
+from math import sqrt
+
+print(sqrt(100))
+
+
+
+# %% ===================================================================== #
+#                       SCOPE AND NAMESPACE KEYWORDS                       #
+# ======================================================================== #
+
+
+
+# %% ===================================================================== #
+#                        ASYNC PROGRAMMING KEYWORDS                        #
+# ======================================================================== #
+
+
+
+# %% ===================================================================== #
+#                                    END                                   #
+# ======================================================================== #
