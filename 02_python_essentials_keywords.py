@@ -3,7 +3,7 @@
 # ======================================================================== #
 # --------------------- Compiled by: (Dr.) B.C. Yadav -------------------- #
 # ------------------------ On: 2025/01/06 19:48:02 ----------------------- #
-# --------------------- Updated: 2025/02/18 08:38:23 --------------------- #
+# --------------------- Updated: 2025/02/19 11:02:32 --------------------- #
 # ======================================================================== #
 # This code covers part of the Python concepts needed to code efficiently, focussing on keywords.
 
@@ -246,12 +246,53 @@ print(sqrt(100))
 # %% ===================================================================== #
 #                       SCOPE AND NAMESPACE KEYWORDS                       #
 # ======================================================================== #
+# ================================ Global ================================ #
+# Global keyword is used to set the scope of a variable as global from a function.   
+def fun():
+    global a,b
+    a,b=10,11
+    print(a,b)
+fun()
+# - Here global a,b = 10,11 is not a valid syntax
+
+# Calling the global variables outside the function 
+print(a,b)
+
+
+
+# %% ============================ Nonlocal =============================== #
+# Nonlocal works like global but is limited to extending the scope of a local variable to the outer enclosing function.
+def fun1():
+    a = 10
+    
+    def fun2():
+        nonlocal a
+        a=11
+        print(a)
+    fun2()
+fun1()
 
 
 
 # %% ===================================================================== #
 #                        ASYNC PROGRAMMING KEYWORDS                        #
 # ======================================================================== #
+# async is used to declare a function as asynchronous which allows it to run concurrently with other tasks.
+# await is used to pause the execution of an async function until an awaited task is complete.
+
+# import asyncio
+
+async def func2():
+    print('Result of an async function.')
+    
+async def func1():
+    await func2()
+
+# asyncio.run(func1())
+await(func1())
+
+# - If this cell code is run in a jupyter env which handles asynchronous code more naturally, then use the `await` keyword. Also the asyncio lib won't be needed. 
+# - However, if its run in a terminal then use `asyncio.run()` and `python <filename.py>` to run it in the terminal.
 
 
 
