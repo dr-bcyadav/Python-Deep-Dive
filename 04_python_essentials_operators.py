@@ -3,7 +3,7 @@
 # ======================================================================== #
 # --------------------- Compiled by: (Dr.) B.C. Yadav -------------------- #
 # ------------------------ On: 2025/02/20 05:12:10 ----------------------- #
-# --------------------- Updated: 2025/02/25 15:48:48 --------------------- #
+# --------------------- Updated: 2025/03/02 12:10:55 --------------------- #
 # ======================================================================== #
 # This code demonstrates parts of the Python concepts needed to code efficiently, focussing on operators.
 
@@ -14,13 +14,15 @@
 # ======================================================================== #
 # Types of operators in python 
 
-# | Operators             | Type                    |
-# |-----------------------|-------------------------|
-# | +, -, *, /, %         | Arithmetic operator     |
-# | <, <=, >, >=, ==, !=  | Relational operator     |
-# | AND, OR, NOT          | Logical operator        |
-# | &, \|, <<, >>, ~, ^   | Bitwise operator        |
-# | =, +=, -=, *=, %=     | Assignment operator     |
+# | Operators               | Type                      |
+# |-------------------------|---------------------------|
+# | +, -, *, /, %           | Arithmetic operator       |
+# | <, <=, >, >=, ==, !=    | Relational operator       |
+# | AND, OR, NOT            | Logical operator          |
+# | &, \|, <<, >>, ~, ^     | Bitwise operator          |
+# | =, +=, -=, *=, %=       | Assignment operator       |
+# | is, is not              | Identity operator         |
+# | in, not in              | Identity operator         |
 
 
 
@@ -119,4 +121,36 @@ print(b)
 # %% ===================================================================== #
 #                            IDENTITY OPERATORS                            #
 # ======================================================================== #
-# Add operators from this point beyond to toc
+# `is` and `is not` are the identity operators both used to check if two values are located on the same part of the memory. They evaluate to True if the two operands are the same object, and False otherwise.
+# Its worth noting that if two variables that are equal (a==b) do not imply that they are identical (a is b).
+
+
+a = [1, 2, 3]
+b = [1, 2, 3]
+c = a
+
+print(f"a == b: {a == b}")  # values are equal
+print(f"a is b: {a is b}")  # different objects in memory
+print(f"\na is c: {a is c}")  # a and c refer to the same object
+print(f"a is not c: {a is not c}")
+
+
+
+# %% ===================================================================== #
+#                           MEMBERSHIP OPERATORS                           #
+# ======================================================================== #
+# The `in` and `not in` operators in Python are used to test whether a value or variable is present in a sequence (such as a list, tuple, string, or set). 
+# They evaluate to True if the value is found in the sequence, and False otherwise.
+
+numbers = [1, 2, 3, 4, 5]
+
+print(f"5 in numbers: {5 in numbers}") 
+print(f"5 not in numbers: {5 not in numbers}") 
+print(f"\n10 in numbers: {10 in numbers}") 
+print(f"10 not in numbers: {10 not in numbers}") 
+
+
+
+# %% ===================================================================== #
+#                                    END                                   #
+# ======================================================================== #
