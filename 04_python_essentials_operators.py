@@ -23,6 +23,7 @@
 # | =, +=, -=, *=, %=       | Assignment operator       |
 # | is, is not              | Identity operator         |
 # | in, not in              | Identity operator         |
+# | Operator Precedence & Associativity |               |
 
 
 
@@ -148,6 +149,37 @@ print(f"5 in numbers: {5 in numbers}")
 print(f"5 not in numbers: {5 not in numbers}") 
 print(f"\n10 in numbers: {10 in numbers}") 
 print(f"10 not in numbers: {10 not in numbers}") 
+
+
+
+# %% ===================================================================== #
+#                             TERNARY OPERATOR                             #
+# ======================================================================== #
+# Ternary operators or conditional expressions, are operators that evaluate something based on a condition being true or false. 
+# They allow testing a condition in a single line, replacing the multi-line if-else, making the code more compact.
+
+# Assignment
+a, b = 10, 20
+min = a if a < b else b
+print(min)
+
+# Nested ternary operator
+age = 7
+is_adult = "Adult" if age >= 18 else "Minor" if age >= 13 else "Child" if age>=5 else "Kid"
+print(is_adult)  
+
+# In a function
+def is_even(num):
+    return "Even" if num % 2 == 0 else "Odd"
+number = 7
+result = is_even(number)
+print(result)  
+
+
+
+# %% ===================================================================== #
+#                   OPERATOR PRECEDENCE AND ASSOCIATIVITY                  #
+# ======================================================================== #
 
 
 
