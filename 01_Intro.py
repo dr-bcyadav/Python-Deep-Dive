@@ -40,7 +40,7 @@ print(a,b,c)
 a,b,c = 1,2.5,'this_string'
 print(a,b,c)
 
-# Practical example of swapping two variables 
+# Swapping two variables 
 a, b = 5, 10
 a, b = b, a
 print(a, b)

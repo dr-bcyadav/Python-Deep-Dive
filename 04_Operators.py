@@ -114,7 +114,7 @@ print(b)
 b *= a  # multiply b by a
 print(b)
 
-b <<= a  # left shift by by a
+b <<= a  # left shift by a
 print(b)
 
 
