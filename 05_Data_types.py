@@ -3,7 +3,7 @@
 # ======================================================================== #
 # --------------------- Compiled by: (Dr.) B.C. Yadav -------------------- #
 # ------------------------ On: 2025/03/26 18:03:35 ----------------------- #
-# --------------------- Updated: 2025/05/19 19:12:48 --------------------- #
+# --------------------- Updated: 2025/05/20 16:38:40 --------------------- #
 # ======================================================================== #
 # This code discusses about the various data types in python.
 
@@ -96,12 +96,30 @@ print(example_tuple[-1])
 # %% ===================================================================== #
 #                             BOOLEAN DATA TYPE                            #
 # ======================================================================== #
+# Python Data type with one of the two built-in values, True or False
+print(type(True))
+print(type(False))
+print(type(true))  # error
 
 
 
 # %% ===================================================================== #
 #                               SET DATA TYPE                              #
 # ======================================================================== #
+# Set is an unordered collection of data types that is iterable, mutable, and has no duplicate elements, and can contain mixed data types.
+# Sets can be created by using the built-in set() function with an iterable object or a sequence by placing the sequence inside curly braces, separated by a ‘comma’. 
+
+# Initializing empty set
+s1 = set()
+
+s1 = set("GeeksForGeeks")
+print("Set with the use of String: ", s1)
+
+s2 = set(["Geeks", "For", "Geeks"])
+print("Set with the use of List: ", s2)
+
+# Set items cannot be accessed by referring to an index since the sets are unordered and their items have no index. A workaround is using the 'in' keyword.
+print("Geeks" in s2)
 
 
 
