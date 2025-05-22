@@ -3,7 +3,7 @@
 # ======================================================================== #
 # --------------------- Compiled by: (Dr.) B.C. Yadav -------------------- #
 # ------------------------ On: 2025/03/26 18:03:35 ----------------------- #
-# --------------------- Updated: 2025/05/20 16:38:40 --------------------- #
+# --------------------- Updated: 2025/05/22 17:37:20 --------------------- #
 # ======================================================================== #
 # This code discusses about the various data types in python.
 
@@ -126,6 +126,22 @@ print("Geeks" in s2)
 # %% ===================================================================== #
 #                           DICTIONARY DATA TYPE                           #
 # ======================================================================== #
+# Dictionaries are made up of key-value pairs separated by commas. The values can be of any datatype and are repeatable while the keys can't be repeated and are immutable.
+
+# Defining an empty one
+d = {}
+
+# Defining using curly braces
+d = {1: 'Geeks', 2: 'For', 3: 'Geeks'}
+print(d)
+
+# Defining using dict() constructor
+d1 = dict({1: 'Geeks', 'two': 'For', 3: 'Geeks'})
+print(d1)
+
+# Elements can be accessed via keys either via square brackets or `.get()`
+print(d1['two'])
+print(d1.get('two'))
 
 
 
